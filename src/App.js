@@ -19,13 +19,17 @@ function App() {
         <div className="Navigation">
           <div className="NavContainer">
             <div className="Brand">
-              <Link to="/">PORTFOLIO</Link>
+              <Link to="/" style={{ color: "#ec352c" }}>
+                PORTFOLIO
+              </Link>
             </div>
             <nav className="nav-list">
               <button>
                 <NavLink
                   to="/"
-                  className={({isActive}) => (isActive ? "selected" : "unselected")}
+                  className={({ isActive }) =>
+                    isActive ? "selected" : "unselected"
+                  }
                 >
                   Home
                 </NavLink>
@@ -33,7 +37,9 @@ function App() {
               <button>
                 <NavLink
                   to="projects"
-                  className={({isActive}) => (isActive ? "selected" : "unselected")}
+                  className={({ isActive }) =>
+                    isActive ? "selected" : "unselected"
+                  }
                 >
                   Projects
                 </NavLink>
@@ -41,7 +47,9 @@ function App() {
               <button>
                 <NavLink
                   to="about"
-                  className={({isActive}) => (isActive ? "selected" : "unselected")}
+                  className={({ isActive }) =>
+                    isActive ? "selected" : "unselected"
+                  }
                 >
                   About
                 </NavLink>
@@ -49,7 +57,9 @@ function App() {
               <button>
                 <NavLink
                   to="contact"
-                  className={({isActive}) => (isActive ? "selected" : "unselected")}
+                  className={({ isActive }) =>
+                    isActive ? "selected" : "unselected"
+                  }
                 >
                   Contact
                 </NavLink>
@@ -70,11 +80,3 @@ function App() {
 }
 
 export default App;
-
-// მთავარ გვერდზე განათავსეთ მისასალმებელი მარკაპი თქვენთვის სასურველი,
-
-// ებაუთზე დაწერეთ თქვენს შესახებ რაც გსურთ ავტო ბიოგრაფია
-
-// კონტაქტზე თქვენი საკონტაქტო LinkedIn, facebook, Phone ან რაც გსურთ
-
-// პროექტებზე დალინკეთ თქვენი ყველა გითჰაბის პროექტი

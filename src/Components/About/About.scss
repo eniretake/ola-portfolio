@@ -1,0 +1,21 @@
+.AboutContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .Education {
+    width: 45%;
+  }
+  .WorkExperience {
+    width: 45%;
+    ul {
+      li {
+        span {
+          font-size: 12px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

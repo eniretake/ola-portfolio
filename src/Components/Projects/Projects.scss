@@ -2,7 +2,7 @@
   width: 80%;
   height: 100%;
   margin: 0 auto;
-  padding: 20px 0px;
+  padding: 10px 0px;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -52,29 +52,28 @@
           vertical-align: top;
         }
       }
-      .ProjectButton {
-        transition-duration: 0.4s;
-        // background-color: #4caf50; /* Green */
-        border: none;
-        color: #000814;
-
-        padding: 10px 15px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 14px;
-        margin: 4px 2px;
-        transition-duration: 0.4s;
-        cursor: pointer;
-        &:hover {
-          background-color: #d53f34; /* Green */
-          color: white;
-        }
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-      }
     }
+  }
+}
+.Button {
+  transition-duration: 0.4s;
+  border: none;
+  color: #000814;
+
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  &:hover {
+    background-color: #d53f34;
+    color: white;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
   }
 }

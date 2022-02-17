@@ -4,7 +4,6 @@
 }
 .Content {
   width: 80%;
-//   height: 85%;
   margin: 0 auto;
   padding: 50px 0px;
   min-width: 700px;
@@ -14,8 +13,6 @@
   justify-content: space-evenly;
   align-items: center;
 
-  .Left {
-  }
   .Right {
     width: 55%;
     height: 100%;
@@ -24,12 +21,8 @@
 
     .ImgContainer {
       width: 100%;
-      //   height: 71%;
-      //   background: url("Home.png") center center no-repeat;
-      //   background-size: contain;
       img {
         width: 100%;
-        // height: 100%;
       }
     }
   }

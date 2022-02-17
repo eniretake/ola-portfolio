@@ -29,14 +29,13 @@ function Projects() {
               <div key={index} className="Project">
                 <div className="ProjectImage">
                   <img src={project.imageUrl} alt={project.title} />
-                  {/* <div className="Hover"></div> */}
                 </div>
 
                 <div className="Description">
                   <h3>{project.title}</h3>
                   <p>{project.desc}</p>
                 </div>
-                <button className="ProjectButton">
+                <button className="Button">
                   <a href={project.url}>View on Github</a>
                 </button>
               </div>
