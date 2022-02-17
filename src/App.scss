@@ -1,0 +1,92 @@
+$content-width: 1240px;
+$breakpoint: 799px;
+$nav-height: 70px;
+$nav-background: #fff;
+$nav-font-color: #000814;
+// $link-hover-color: #f8c300;
+$link-hover-color: #ec352c;
+$primary-blue: #001d3d;
+$secondary-blue: #003566;
+
+.Navigation {
+  height: $nav-height;
+  background: $nav-background;
+}
+
+.NavContainer {
+  max-width: $content-width;
+  margin: 0 auto;
+}
+.Brand {
+  position: absolute;
+  padding-left: 20px;
+  float: left;
+  line-height: $nav-height;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  font-weight: 600;
+
+  a,
+  a:visited {
+    color: $nav-font-color;
+    text-decoration: none;
+  }
+}
+
+nav {
+  float: right;
+  // ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  button {
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+    float: left;
+    position: relative;
+    a {
+      display: block;
+      padding: 10px 20px 0 20px;
+      line-height: 50px;
+      background: $nav-background;
+      color: $nav-font-color;
+      text-decoration: none;
+
+      &::before {
+        transition: 300ms;
+        height: 5px;
+        content: "";
+        position: absolute;
+        background-color: $link-hover-color;
+        width: 0%;
+        bottom: 0px;
+      }
+
+      &:hover::before {
+        width: 70%;
+      }
+      &:not(:only-child):after {
+        padding-left: 4px;
+        content: " ▾";
+      }
+    } // Dropdown list
+    a.selected {
+      color: $link-hover-color;
+      font-weight: 600;
+    }
+    a.unselected {
+      color: inherit;
+    }
+
+    ul button {
+      min-width: 190px;
+      a {
+        padding: 15px;
+        line-height: 20px;
+      }
+    }
+  }
+  // }
+}

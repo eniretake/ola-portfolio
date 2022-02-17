@@ -1,0 +1,36 @@
+.Container {
+  height: 80vh;
+  display: flex;
+}
+.Content {
+  width: 80%;
+//   height: 85%;
+  margin: 0 auto;
+  padding: 50px 0px;
+  min-width: 700px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+
+  .Left {
+  }
+  .Right {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    .ImgContainer {
+      width: 100%;
+      //   height: 71%;
+      //   background: url("Home.png") center center no-repeat;
+      //   background-size: contain;
+      img {
+        width: 100%;
+        // height: 100%;
+      }
+    }
+  }
+}
